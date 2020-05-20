@@ -26,8 +26,8 @@ def main():
     # List of strings to apply our RegEx filter to
     strings = ['dog', 'deer', 'deal', 'speed', 'read']
     
+    # Adding a wild card to our search query 
     search_pattern = str('.*' + args['query'])
-    print(search_pattern)
     
     # Converting user-supplied query to a RegEx object
     r = re.compile(search_pattern)
